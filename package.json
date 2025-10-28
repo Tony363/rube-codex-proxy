@@ -1,0 +1,16 @@
+{
+  "name": "rube-codex-proxy",
+  "version": "0.1.0",
+  "description": "Codex-compatible MCP proxy for Composio Rube",
+  "type": "module",
+  "bin": {
+    "rube-codex-proxy": "./bin/rube-codex-proxy.js"
+  },
+  "scripts": {
+    "start": "node ./bin/rube-codex-proxy.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.2",
+    "zod": "^3.23.8"
+  }
+}
