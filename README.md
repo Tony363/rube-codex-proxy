@@ -4,7 +4,8 @@ This Node-based shim lets OpenAI Codex CLI talk to Composio’s Rube MCP server 
 
 ## Quick Install
 ```bash
-bash scripts/rube-codex-proxy/install.sh
+cd rube-codex-proxy
+bash install.sh
 ```
 The script will:
 1. Install local npm dependencies for the proxy.
