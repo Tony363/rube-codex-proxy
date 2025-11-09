@@ -15,11 +15,11 @@ The script will:
 After it succeeds, open `codex` and run `/mcp` to confirm the Rube tools are listed.
 
 ## Manual Steps (if you need to do things by hand)
-1. `cd scripts/rube-codex-proxy && npm install`
+1. `cd rube-codex-proxy && npm install`
 2. Edit `~/.codex/config.toml`:
    ```toml
    [mcp_servers.rube]
-   command = "/absolute/path/to/scripts/rube-codex-proxy/bin/rube-codex-proxy.js"
+   command = "/absolute/path/to/rube-codex-proxy/bin/rube-codex-proxy.js"
    args = []
    startup_timeout_seconds = 120
    ```
@@ -29,7 +29,7 @@ After it succeeds, open `codex` and run `/mcp` to confirm the Rube tools are lis
    import { Client as McpClient } from '@modelcontextprotocol/sdk/client/index.js';
    import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
    const transport = new StdioClientTransport({
-     command: '/absolute/path/to/scripts/rube-codex-proxy/bin/rube-codex-proxy.js',
+     command: '/absolute/path/to/rube-codex-proxy/bin/rube-codex-proxy.js',
      args: [],
      stderr: 'pipe',
    });
@@ -56,7 +56,7 @@ After it succeeds, open `codex` and run `/mcp` to confirm the Rube tools are lis
 ## Resetting
 To recreate a “fresh developer” state:
 ```bash
-rm -rf scripts/rube-codex-proxy/node_modules
+rm -rf node_modules/
 rm -rf ~/.mcp-auth/mcp-remote-0.1.29
 python3 - <<'PY'
 from pathlib import Path

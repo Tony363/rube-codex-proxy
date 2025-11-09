@@ -1,0 +1,4 @@
+config.toml
+.env
+*.png
+*.jpg
