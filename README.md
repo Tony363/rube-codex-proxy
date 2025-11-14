@@ -1,5 +1,5 @@
 # Rube ↔ Codex MCP Proxy
-
+Built by the Cracked 10x AI Engineer @ThomasCloarec
 This Node-based shim lets OpenAI Codex CLI talk to Composio’s Rube MCP server without triggering Codex’s stricter tool-schema validation. Codex sees plain string-based tools, while the proxy forwards JSON payloads to Rube unchanged.
 
 ## Quick Install
